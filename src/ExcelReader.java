@@ -10,8 +10,10 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
+
 public class ExcelReader {
-    //pre-made excel file just for checking the code and making my life easier
+
+    //pre-made excel file just for checking the code and making life easier
     //can be changed as needed
 
     //hardcoded test files path to make my life easier (change it to make your life easier as well)
@@ -25,7 +27,7 @@ public class ExcelReader {
             1. have at least three columns 
             2. have at least two rows 
             3. end in .csv 
-            4. check if the file exist duh! (almost forgot it)
+            4. check if the file exist
             
         if the user enters exit it will return null */
 
@@ -71,7 +73,7 @@ public class ExcelReader {
     }
     
     /* ReadExcelCsv Method to read a gene map and process it into a tree map (so it's alphabetically ordered and contains no duplicates:))
-     * Each map contains a key being the gene and a value being another tree map with the genes it cnnects to as a key
+     * Each map contains a key being the gene and a value being another tree map with the genes it connects to as a key
      * and the respective weight of the connection as a value.
      * 
      * It is also reciprocal meaning it will store geneA with connection to geneB and geneB with connection
